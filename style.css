@@ -20,3 +20,7 @@ body {
   td {
       border: 1px solid black;
   }
+  button {
+      background-color: chocolate;
+      border-radius: 10px;
+  }
