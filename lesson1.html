@@ -1,0 +1,30 @@
+<html>
+<script src="https://unpkg.com/vue@next"></script>
+<link rel="stylesheet" href="style.css"/>
+
+<body>
+  <div id="app">
+    <span v-for="option in optionsValues">
+      <input type="checkbox" :id=option.id :value=option.value v-model="checkedNames" />
+      <label for=option.id>{{option.value}}</label>
+    </span>
+    <p>
+      <input id="name" type=text v-model="name"/><label for="name">Name</label>
+    </p>
+    <p>
+      <button :class="[name ? activeClass:'']"> MyButton </button>
+    </p>
+    <div v-show="checkedNames.length > 0">{{checkedNames}}</div>
+
+
+    <span v-for="item in oldComments">
+      {{item}} <br>
+    </span>
+    <input type="text" id="comment" v-model="comment" @keyup.enter="addComment" /><label for="comment">your
+      comment</label>
+
+  </div>
+  <script src="test.js"></script>
+</body>
+
+</html>

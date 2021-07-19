@@ -1,0 +1,22 @@
+body {
+    font-family: system-ui;
+    background: white;
+    color: black;
+    text-align: center;
+  }
+  button.active {
+    background-color: orangered;
+  }
+  table {
+      background-color: burlywood;
+      position: relative;
+      margin: auto;
+      border: 10px;
+  }
+  th {
+      background-color: aqua;
+      width: 100px;
+  } 
+  td {
+      border: 1px solid black;
+  }
